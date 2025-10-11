@@ -1,0 +1,116 @@
+.formacao {
+  background: linear-gradient(45deg, #686565, #151515);
+  color: #f7f7f7;
+}
+
+.formacao-container .subtitulo {
+  color: black;
+  max-width: 5ch;
+}
+
+.formacao-container-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.faculdade-lista {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+.faculdade-lista .faculdade {
+  word-break: keep-all;
+  /* max-width: 200px; */
+  background-color: #000000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  border-radius: 5px;
+  flex: 1;
+}
+.faculdade-curso::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 25px;
+  left: -5px;
+  background: linear-gradient(45deg, greenyellow, green);
+}
+.faculdade-tipo {
+  color: #a3a3a3;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.faculdade-curso {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  flex: 1;
+  margin-bottom: 40px;
+}
+.faculdade-instituicao {
+  color: #a3a3a3;
+  font-size: 1.125rem;
+}
+.formacao-extra .cursos {
+  margin-bottom: 60px;
+}
+.formacao-extra h3 {
+  color: #8f8f8f;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+.formacao-extra h3::before {
+  display: block;
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: -35px;
+  top: -4px;
+}
+.cursos h3::before {
+  background: url("../img/livro.png") no-repeat center center;
+  background-size: 25px;
+}
+.idioma h3::before {
+  background: url("../img/idioma.png") no-repeat center center;
+  background-size: 25px;
+}
+.formacao-extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.formacao-extra span {
+  color: #8f8f8f;
+}
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+.formacao-desc {
+  font-size: 1.125rem;
+}
+@media (max-width: 800px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .formacao-container .subtitulo {
+    color: #f7f7f7;
+    width: initial;
+    font-size: 3rem;
+    word-break: initial;
+    text-transform: capitalize;
+  }
+  .formacao-desc {
+    font-size: 1.2rem;
+  }
+}
