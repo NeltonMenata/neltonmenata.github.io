@@ -115,7 +115,7 @@
   .empresa-ano::before {
     color: #c5c5c5;
   }
-  .empresa-desc strong {
+  .experiencia-desc, .experiencia-desc strong{
     color: white;
   }
 }
