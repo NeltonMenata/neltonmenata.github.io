@@ -77,11 +77,11 @@
 }
 .cursos h3::before {
   background: url("../img/livro.png") no-repeat center center;
-  background-size: 25px;
+  background-size: contain;
 }
 .idioma h3::before {
   background: url("../img/idioma.png") no-repeat center center;
-  background-size: 25px;
+  background-size: contain;
 }
 .formacao-extra li {
   font-size: 1.125rem;
@@ -98,7 +98,10 @@
 .formacao-desc {
   font-size: 1.125rem;
 }
+
+
 @media (max-width: 800px) {
+
   .formacao-container {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -113,4 +116,10 @@
   .formacao-desc {
     font-size: 1.2rem;
   }
+
+  .formacao-extra h3::before {
+    left: 150px;
+  }
+ 
 }
+
